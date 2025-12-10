@@ -1,0 +1,135 @@
+/* Import Font dari Google Fonts */
+/* Montserrat untuk teks umum, Playfair Display untuk judul */
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8; /* Latar belakang abu-abu muda yang lembut */
+  color: #333; /* Warna teks utama */
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff; /* Latar belakang putih bersih untuk konten */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Bayangan lembut */
+  border-radius: 12px; /* Sudut membulat */
+  text-align: center; /* Teks di tengah */
+}
+
+/* Header Profil */
+.profile-header {
+  margin-bottom: 30px;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+  object-fit: cover; /* Memastikan gambar mengisi area tanpa terdistorsi */
+  border: 4px solid #a8dadc; /* Border warna estetis */
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8em;
+  color: #1d3557; /* Warna biru gelap yang elegan */
+  margin-bottom: 5px;
+}
+
+.tagline {
+  font-size: 1.1em;
+  color: #6c757d; /* Abu-abu sedang untuk tagline */
+  font-style: italic;
+}
+
+/* Bagian Umum */
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2em;
+  color: #457b9d; /* Warna biru sedang */
+  margin-top: 40px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #e63946; /* Garis bawah merah muda yang kontras */
+  margin: 10px auto 0;
+}
+
+p {
+  font-size: 1.05em;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 15px;
+  text-align: justify; /* Teks rata kiri-kanan untuk paragraf */
+}
+
+/* Tautan Sosial Media */
+.social-links ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.social-links li {
+  margin-bottom: 15px;
+}
+
+.social-links a {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #a8dadc; /* Warna tombol biru muda */
+  color: #1d3557; /* Warna teks tombol */
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  min-width: 200px; /* Lebar minimum tombol */
+}
+
+.social-links a:hover {
+  background-color: #457b9d; /* Warna biru sedang saat hover */
+  color: #ffffff;
+  transform: translateY(-3px); /* Efek sedikit terangkat saat hover */
+}
+
+/* Footer */
+.footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid #eee;
+  color: #888;
+  font-size: 0.9em;
+}
+
+/* Responsif dasar */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  .social-links a {
+    padding: 10px 20px;
+    min-width: unset;
+    width: 100%;
+    box-sizing: border-box; /* Pastikan padding dihitung dalam lebar */
+  }
+}
