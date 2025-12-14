@@ -43,14 +43,14 @@ h1 {
   margin-bottom: 5px;
 }
 
-.tagline {
+.tanggal {
   font-size: 1.1em;
   color: #6c757d;
   font-style: italic;
 }
 
 /* ======================================= */
-/* 3. BAGIAN KONTEN (PANTUN) */
+/* 3. BAGIAN KONTEN (PUISI) */
 /* ======================================= */
 h2 {
   font-family: "Playfair Display", serif;
@@ -70,7 +70,7 @@ h2::after {
   margin: 10px auto 0;
 }
 
-.pantun {
+.puisi {
   margin-bottom: 50px;
 }
 
