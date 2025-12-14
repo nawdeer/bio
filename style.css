@@ -2,22 +2,21 @@
 /* 1. FONT & RESET */
 /* ======================================= */
 body {
-  /* Menggunakan font Montserrat untuk teks umum dan Playfair Display untuk judul */
   font-family: "Montserrat", sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8; /* Latar belakang abu-abu muda yang lembut */
-  color: #333; /* Warna teks utama */
+  background-color: #f8f8f8; 
+  color: #333; 
 }
 
 .container {
   max-width: 800px;
   margin: 40px auto;
   padding: 30px;
-  background-color: #ffffff; /* Latar belakang putih bersih untuk konten */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Bayangan lembut */
-  border-radius: 12px; /* Sudut membulat */
+  background-color: #ffffff; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
+  border-radius: 12px; 
   text-align: center;
 }
 
@@ -29,9 +28,9 @@ body {
 }
 
 .profile-pic {
-  width: 200px; /* Ukuran diperbesar untuk estetika */
-  height: 200px; /* Ukuran diperbesar untuk estetika */
-  border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+  width: 200px; 
+  height: 200px; 
+  border-radius: 50%; 
   object-fit: cover;
   border: 4px solid #a8dadc;
   margin-bottom: 15px;
@@ -51,7 +50,7 @@ h1 {
 }
 
 /* ======================================= */
-/* 3. BAGIAN KONTEN (ABOUT ME) */
+/* 3. BAGIAN KONTEN (PANTUN) */
 /* ======================================= */
 h2 {
   font-family: "Playfair Display", serif;
@@ -71,8 +70,7 @@ h2::after {
   margin: 10px auto 0;
 }
 
-.about-me {
-  /* Penyesuaian: Menambah jarak di bawah Bio agar lebih renggang dari tombol */
+.pantun {
   margin-bottom: 50px;
 }
 
@@ -85,19 +83,19 @@ p {
 }
 
 /* ======================================= */
-/* 4. TAUTAN SOSIAL MEDIA */
+/* 4. LINK */
 /* ======================================= */
-.social-links ul {
+.links ul {
   list-style: none;
   padding: 0;
   margin-top: 25px;
 }
 
-.social-links li {
-  margin-bottom: 25px; /* Penyesuaian: Jarak vertikal antar tombol diperlebar */
+.links li {
+  margin-bottom: 25px; 
 }
 
-.social-links a {
+.links a {
   display: inline-block;
   padding: 12px 25px;
   background-color: #a8dadc;
@@ -106,10 +104,10 @@ p {
   border-radius: 8px;
   font-weight: 600;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  min-width: 220px; /* Lebar minimum tombol untuk desktop */
+  min-width: 220px; 
 }
 
-.social-links a:hover {
+.links a:hover {
   background-color: #457b9d;
   color: #ffffff;
   transform: translateY(-3px);
@@ -126,19 +124,18 @@ p {
   font-size: 0.9em;
 }
 
-/* Menghilangkan underline dan menyesuaikan warna link di footer */
 .footer a {
-  color: inherit; /* Mengambil warna teks dari elemen parent (footer) */
-  text-decoration: none; /* Menghilangkan garis bawah */
+  color: inherit; 
+  text-decoration: none; 
   transition: color 0.3s ease;
 }
 
 .footer a:hover {
-  color: #457b9d; /* Mengubah warna sedikit saat di-hover sebagai tanda bisa diklik */
+  color: #457b9d; 
 }
 
 /* ======================================= */
-/* 6. MEDIA QUERIES (RESPONSIVE MOBILE) */
+/* 6. MEDIA QUERIES */
 /* ======================================= */
 @media (max-width: 600px) {
   .container {
@@ -146,7 +143,6 @@ p {
     padding: 20px;
   }
 
-  /* Ukuran teks di mobile */
   h1 {
     font-size: 2.2em;
   }
@@ -155,20 +151,18 @@ p {
     font-size: 1.6em;
   }
 
-  /* Ukuran gambar di mobile */
   .profile-pic {
     width: 150px;
     height: 150px;
   }
 
-  /* Tombol Tautan Penuh Lebar di Mobile */
-  .social-links a {
+  .links a {
     min-width: unset;
     width: 100%;
     box-sizing: border-box;
   }
 
-  .social-links li {
+  .links li {
     margin-bottom: 20px;
   }
 }
