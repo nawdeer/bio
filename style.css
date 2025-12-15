@@ -79,7 +79,7 @@ p {
   line-height: 1.8;
   color: #555;
   margin-bottom: 15px;
-  text-align: justify;
+  text-align: left;
 }
 
 /* ======================================= */
@@ -87,115 +87,114 @@ p {
 /* ======================================= */
 
 .journey-recap {
-    margin-top: 60px;
-    padding-top: 30px;
-    border-top: 1px solid #eee;
-    text-align: center;
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+  text-align: center;
 }
 
 .recap-item {
-    margin-bottom: 50px;
-    padding: 20px 0;
+  margin-bottom: 50px;
+  padding: 20px 0;
 }
 
 .recap-item h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5em;
-    color: #1d3557;
-    margin-bottom: 5px;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5em;
+  color: #1d3557;
+  margin-bottom: 5px;
 }
 
 .recap-date {
-    font-size: 0.9em;
-    color: #999;
-    font-style: italic;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 0.9em;
+  color: #999;
+  font-style: italic;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .recap-description {
-    max-width: 600px;
-    margin: 0 auto 30px auto;
-    text-align: justify;
-    font-size: 1em;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  text-align: justify;
+  font-size: 1em;
 }
-
 
 /* --- WIDGET GALERI (Kontrol JS) --- */
 
 .photo-widget {
-    position: relative;
-    width: 300px; 
-    height: 350px; 
-    margin: 40px auto; 
-    cursor: grab; 
-    user-select: none; 
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 40px auto;
+  cursor: grab;
+  user-select: none;
 }
 
 .photo-carousel {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 /* Setiap Kartu */
 .photo-card {
-    position: absolute;
-    width: 90%;
-    height: 90%;
-    border-radius: 12px;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    /* Transisi untuk semua properti (position, opacity, transform) */
-    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
-    border: 5px solid #ffffff;
-    
-    /* Default: Sembunyikan dan perkecil kartu yang tidak aktif */
-    opacity: 0;
-    transform: scale(0.8) rotate(0deg); 
-    z-index: 1;
-    top: 5%;
-    left: 5%;
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  /* Transisi untuk semua properti (position, opacity, transform) */
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border: 5px solid #ffffff;
+
+  /* Default: Sembunyikan dan perkecil kartu yang tidak aktif */
+  opacity: 0;
+  transform: scale(0.8) rotate(0deg);
+  z-index: 1;
+  top: 5%;
+  left: 5%;
 }
 
 /* Styling untuk Kartu yang Aktif (Tengah) */
 .photo-card.active-center {
-    opacity: 1;
-    z-index: 3;
-    transform: scale(1) rotate(0deg); 
-    top: 5%;
-    left: 5%;
+  opacity: 1;
+  z-index: 3;
+  transform: scale(1) rotate(0deg);
+  top: 5%;
+  left: 5%;
 }
 
 /* Styling untuk Kartu Berikutnya (Di sebelah kanan) */
 .photo-card.active-right {
-    opacity: 0.6;
-    z-index: 2;
-    /* Pindah dan putar sedikit ke kanan */
-    transform: scale(0.9) rotate(10deg) translateX(50px); 
-    top: 15%;
-    left: 5%; 
+  opacity: 0.6;
+  z-index: 2;
+  /* Pindah dan putar sedikit ke kanan */
+  transform: scale(0.9) rotate(10deg) translateX(50px);
+  top: 15%;
+  left: 5%;
 }
 
 /* Styling untuk Kartu Sebelumnya (Di sebelah kiri) */
 .photo-card.active-left {
-    opacity: 0.6;
-    z-index: 2;
-    /* Pindah dan putar sedikit ke kiri */
-    transform: scale(0.9) rotate(-10deg) translateX(-50px);
-    top: 15%;
-    left: 5%;
+  opacity: 0.6;
+  z-index: 2;
+  /* Pindah dan putar sedikit ke kiri */
+  transform: scale(0.9) rotate(-10deg) translateX(-50px);
+  top: 15%;
+  left: 5%;
 }
 
 /* Efek saat Kartu Keluar (digunakan JS saat swipe) */
 .photo-card.exit-left {
-    opacity: 0;
-    transform: translateX(-300px) rotate(-15deg);
+  opacity: 0;
+  transform: translateX(-300px) rotate(-15deg);
 }
 .photo-card.exit-right {
-    opacity: 0;
-    transform: translateX(300px) rotate(15deg);
+  opacity: 0;
+  transform: translateX(300px) rotate(15deg);
 }
 
 /* ======================================= */
@@ -206,6 +205,7 @@ p {
   border-top: 1px solid #e0e0e0;
   padding-top: 40px;
   margin-top: 25px;
+  text-align: center;
 }
 
 .links li {
@@ -268,18 +268,37 @@ p {
     font-size: 1.6em;
   }
 
+  .puisi p {
+    font-size: 0.95em;
+    line-height: 1.7;
+  }
+
   .profile-pic {
     width: 150px;
     height: 150px;
   }
 
+  .photo-widget {
+    width: 200px;
+    height: 250px;
+    margin: 30px auto;
+  }
+
+  .photo-card {
+    width: 90%;
+    height: 90%;
+    border: 4px solid #ffffff;
+  }
+
   .links a {
+    padding: 10px 20px;
+    font-size: 0.95em;
     min-width: unset;
-    width: 100%;
+    width: 85%;
     box-sizing: border-box;
   }
 
   .links li {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
