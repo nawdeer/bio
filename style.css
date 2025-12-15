@@ -6,17 +6,17 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8; 
-  color: #333; 
+  background-color: #f8f8f8;
+  color: #333;
 }
 
 .container {
   max-width: 800px;
   margin: 40px auto;
   padding: 30px;
-  background-color: #ffffff; 
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
-  border-radius: 12px; 
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
   text-align: center;
 }
 
@@ -28,9 +28,9 @@ body {
 }
 
 .profile-pic {
-  width: 200px; 
-  height: 200px; 
-  border-radius: 50%; 
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
   object-fit: cover;
   border: 4px solid #a8dadc;
   margin-bottom: 15px;
@@ -83,16 +83,133 @@ p {
 }
 
 /* ======================================= */
+/* 7. RECAP PERJALANAN (WIDGET Tumpukan) */
+/* ======================================= */
+
+.journey-recap {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+.recap-item {
+    margin-bottom: 50px;
+    padding: 20px 0;
+}
+
+.recap-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    color: #1d3557;
+    margin-bottom: 5px;
+}
+
+.recap-date {
+    font-size: 0.9em;
+    color: #999;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.recap-description {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    text-align: justify;
+    font-size: 1em;
+}
+
+
+/* --- WIDGET GALERI (Kontrol JS) --- */
+
+.photo-widget {
+    position: relative;
+    width: 300px; 
+    height: 350px; 
+    margin: 40px auto; 
+    cursor: grab; 
+    user-select: none; 
+}
+
+.photo-carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Setiap Kartu */
+.photo-card {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    /* Transisi untuk semua properti (position, opacity, transform) */
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+    border: 5px solid #ffffff;
+    
+    /* Default: Sembunyikan dan perkecil kartu yang tidak aktif */
+    opacity: 0;
+    transform: scale(0.8) rotate(0deg); 
+    z-index: 1;
+    top: 5%;
+    left: 5%;
+}
+
+/* Styling untuk Kartu yang Aktif (Tengah) */
+.photo-card.active-center {
+    opacity: 1;
+    z-index: 3;
+    transform: scale(1) rotate(0deg); 
+    top: 5%;
+    left: 5%;
+}
+
+/* Styling untuk Kartu Berikutnya (Di sebelah kanan) */
+.photo-card.active-right {
+    opacity: 0.6;
+    z-index: 2;
+    /* Pindah dan putar sedikit ke kanan */
+    transform: scale(0.9) rotate(10deg) translateX(50px); 
+    top: 15%;
+    left: 5%; 
+}
+
+/* Styling untuk Kartu Sebelumnya (Di sebelah kiri) */
+.photo-card.active-left {
+    opacity: 0.6;
+    z-index: 2;
+    /* Pindah dan putar sedikit ke kiri */
+    transform: scale(0.9) rotate(-10deg) translateX(-50px);
+    top: 15%;
+    left: 5%;
+}
+
+/* Efek saat Kartu Keluar (digunakan JS saat swipe) */
+.photo-card.exit-left {
+    opacity: 0;
+    transform: translateX(-300px) rotate(-15deg);
+}
+.photo-card.exit-right {
+    opacity: 0;
+    transform: translateX(300px) rotate(15deg);
+}
+
+/* ======================================= */
 /* 4. LINK */
 /* ======================================= */
 .links ul {
   list-style: none;
-  padding: 0;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 40px;
   margin-top: 25px;
 }
 
 .links li {
-  margin-bottom: 25px; 
+  margin-bottom: 25px;
 }
 
 .links a {
@@ -104,7 +221,7 @@ p {
   border-radius: 8px;
   font-weight: 600;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  min-width: 220px; 
+  min-width: 220px;
 }
 
 .links a:hover {
@@ -125,13 +242,13 @@ p {
 }
 
 .footer a {
-  color: inherit; 
-  text-decoration: none; 
+  color: inherit;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer a:hover {
-  color: #457b9d; 
+  color: #457b9d;
 }
 
 /* ======================================= */
