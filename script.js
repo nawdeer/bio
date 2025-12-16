@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     // =======================================
-    // 1. DATA PERJALANAN (PASTIKAN JUMLAH DATA SESUAI JUMLAH FOTO)
+    // 1. DATA PERJALANAN
     // =======================================
     const journeyData = [
-        { title: "Ini Judul 1", date: "12 | 12 | 2025", description: "Awal mula segalanya. Kita memutuskan untuk berjalan bersama dan mengukir kisah yang takkan pernah berakhir." },
-        { title: "Ini Judul 2", date: "14 | 02 | 2026", description: "Di bawah selimut bintang Bromo, kita berbagi mimpi dan janji. Momen yang membuat kita sadar betapa dalamnya perasaan ini." },
-        { title: "Ini Judul 3", date: "07 | 07 | 2026", description: "Deburan ombak dan senja yang lembut. Tempat di mana kita berdua menemukan ketenangan sejati dan melupakan hiruk pikuk dunia." },
-        { title: "Ini Judul 4", date: "18 | 10 | 2026", description: "Hari itu hujan turun deras, tetapi pelukanmu adalah tempat terhangat. Hari-hari yang sederhana namun paling bermakna." },
-        { title: "Ini Judul 5", date: "27 | 10 | 2026", description: "Setiap hari bersamamu adalah perjalanan baru. Dan petualangan kita akan terus berlanjut, selamanya." }
-        // TAMBAHKAN DATA SESUAI JUMLAH FOTO ANDA
+        { title: "Ini Judul 1", date: "12 | 12 | 2025", description: "Awal mula segalanya. Kita memutuskan untuk berjalan bersama dan mengukir kisah yang takkan pernah berakhir. (Contoh Deskripsi)" },
+        { title: "Ini Judul 2", date: "14 | 02 | 2026", description: "Di bawah selimut bintang Bromo, kita berbagi mimpi dan janji. Momen yang membuat kita sadar betapa dalamnya perasaan ini. (Contoh Deskripsi)" },
+        { title: "Ini Judul 3", date: "07 | 07 | 2026", description: "Deburan ombak dan senja yang lembut. Tempat di mana kita berdua menemukan ketenangan sejati dan melupakan hiruk pikuk dunia. (Contoh Deskripsi)" },
+        { title: "Ini Judul 4", date: "18 | 10 | 2026", description: "Hari itu hujan turun deras, tetapi pelukanmu adalah tempat terhangat. Hari-hari yang sederhana namun paling bermakna. (Contoh Deskripsi)" },
+        { title: "Ini Judul 5", date: "27 | 10 | 2026", description: "Setiap hari bersamamu adalah perjalanan baru. Dan petualangan kita akan terus berlanjut, selamanya. (Contoh Deskripsi)" }
+        // DATA BARU
     ];
     
     // =======================================
